@@ -16,11 +16,23 @@ public partial class User_Dashboard : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
+         
             bind();
             Binddash();
             bindgrid();
             //pNodeL(Session["user"].ToString(), "one");
             //pNodeR(Session["user"].ToString(), "two");
+            BindImage();
+        }
+    }
+    public void BindImage()
+    {
+        DataTable dt2 = new DataTable();
+        dt2 = objsql.GetTable("select * from popup");
+        if (dt2.Rows.Count > 0)
+        {
+            ListView2.DataSource = dt2;
+            ListView2.DataBind();
         }
     }
     protected void bind()

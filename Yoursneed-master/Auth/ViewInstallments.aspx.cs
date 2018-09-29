@@ -117,11 +117,11 @@ public partial class Auth_ViewInstallments : System.Web.UI.Page
     protected void gvpins_RowUpdating(object sender, GridViewUpdateEventArgs e)
     {
         Label id = gvpins.Rows[e.RowIndex].FindControl("lblid") as Label;
-
         TextBox txtdate = this.gvpins.Rows[e.RowIndex].FindControl("txtdate") as TextBox;
-        string date = txtdate.Text;
-      //  DateTime dat = DateTime.ParseExact(date, ("yyyy-MM-dd"), null);
-        objsql.ExecuteNonQuery("Update installments set dated='" + Convert.ToDateTime(date).ToString("yyyy-MM-dd") + "' where serial='" + id.Text + "'");
+        //string date = ((TextBox)row.Cells[0].Controls[0]).Text;
+        TextBox date = (TextBox)this.gvpins.Rows[e.RowIndex].FindControl("txtdate");
+        string ddat = date.Text;
+        objsql.ExecuteNonQuery("Update installments set dated='" + Convert.ToDateTime(ddat).ToString("yyyy-MM-dd") + "' where serial='" + id.Text + "'");
         gvpins.EditIndex = -1;
         if (Request.QueryString["id"] != null)
         {
@@ -144,7 +144,6 @@ public partial class Auth_ViewInstallments : System.Web.UI.Page
         else
         {
             bind(txtregid.Text);
-
         }
     }
 

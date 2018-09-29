@@ -64,7 +64,7 @@
                        <asp:Label ID="lbldate" runat="server" Text='<%# Convert.ToDateTime(Eval("dated")).ToString("dd-MM-yyyy") %>'></asp:Label>
                     </ItemTemplate>
                       <EditItemTemplate>  
-                        <asp:TextBox ID="txtdate" runat="server" Text='<%# Convert.ToDateTime(Eval("dated")).ToString("dd-MM-yyyy") %>' ReadOnly="true"></asp:TextBox>  
+                            <asp:TextBox ID="txtdate" runat="server" Text='<%# Convert.ToDateTime(Eval("dated")).ToString("dd-MM-yyyy") %>'></asp:TextBox>  
                           <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" TargetControlID="txtdate" Format="dd-MM-yyyy" />
                     </EditItemTemplate>  
                 </asp:TemplateField>

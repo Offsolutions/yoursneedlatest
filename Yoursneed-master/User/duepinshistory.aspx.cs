@@ -16,7 +16,6 @@ public partial class User_duepinshistory : System.Web.UI.Page
         {
             bind();
         }
-
     }
     protected void bind()
     {

@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="cphead" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cptitle" Runat="Server">
-    UnUsed Pins
+    Un-Used Pins
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cpmain" Runat="Server">
      <div class="col-md-12">

@@ -125,6 +125,7 @@
                                         <ul class="sub-menu">
                                             <li><a href="Createpins.aspx"><i class="fa fa-edit"></i>Create and Allot Pins </a></li>
                                             <li><a href="CreateDuePins.aspx"><i class="fa fa-desktop"></i>Create Due Pins </a></li>
+                                            <li><a href="DuePinsDetail.aspx"><i class="fa fa-desktop"></i>Vies Due Pins </a></li>
                                             <li><a href="unusedpinstatus.aspx"><i class="fa fa-bar-chart-o"></i>Unused Pins Status </a></li>
                                             <li><a href="UsedPins.aspx"><i class="fa fa-bar-chart-o"></i>Used Pins Status </a></li>
                                             <li><a href="Deleteid.aspx"><i class="fa fa-bar-chart-o"></i>Delete User</a></li>

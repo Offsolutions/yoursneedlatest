@@ -8,19 +8,19 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="cpmain" Runat="Server">
     <div class="form-group">
                <label> Total Pins</label>
-               <asp:TextBox ID="txtregid" AutoPostBack="true" OnTextChanged="txtregid_TextChanged" runat="server" class="form-control" ></asp:TextBox>
+               <asp:TextBox ID="txtregid" runat="server" CssClass="form-control" ></asp:TextBox>
                <asp:Label ID="lblname" runat="server" Text=""></asp:Label>
                
           </div>
     <div class="form-group">
                <label> Enter Registration Id. </label>
-               <asp:TextBox ID="TextBox1" AutoPostBack="true" OnTextChanged="txtregid_TextChanged" runat="server" class="form-control" ></asp:TextBox>
+               <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" ></asp:TextBox>
                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                
           </div>
     <div class="form-group">
                <label> Enter Registration Id. </label>
-               <asp:TextBox ID="TextBox2" AutoPostBack="true" OnTextChanged="txtregid_TextChanged" runat="server" class="form-control" ></asp:TextBox>
+               <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" ></asp:TextBox>
                <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
                
           </div>

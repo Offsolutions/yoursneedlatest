@@ -94,7 +94,7 @@ public partial class User_Tree : System.Web.UI.Page
         #region Check Left Active Pair
         {
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "select regno from usersnew where sregno=@ID and node='one'";
+            cmd.CommandText = "select regno from usersnew where sregno=@ID and node='one' and active='1'";
             cmd.Parameters.Add("@ID", SqlDbType.VarChar).Value = Sr;
             cmd.Connection = con;
             if (Convert.ToString(cmd.ExecuteScalar()) != "")
@@ -158,7 +158,7 @@ public partial class User_Tree : System.Web.UI.Page
             #region LeftNode
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "select regno from usersnew where sregno=@ID and node='one'";
+                cmd.CommandText = "select regno from usersnew where sregno=@ID and node='one' and active='1'";
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar).Value = Sr;
                 cmd.Connection = con;
                 LinkButton1.Text = Convert.ToString(cmd.ExecuteScalar());
@@ -196,7 +196,7 @@ public partial class User_Tree : System.Web.UI.Page
             #endregion
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "select fname from usersnew where sregno=@ID and node='one'";
+                cmd.CommandText = "select fname from usersnew where sregno=@ID and node='one' and active='1'";
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar).Value = Sr;
                 cmd.Connection = con;
                 Label10.Text = Convert.ToString(cmd.ExecuteScalar());
@@ -226,7 +226,7 @@ public partial class User_Tree : System.Web.UI.Page
             #region RightNode
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "select regno from usersnew where sregno=@ID and node='two'";
+                cmd.CommandText = "select regno from usersnew where sregno=@ID and node='two' and active='1'";
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar).Value = Sr;
                 cmd.Connection = con;
                 LinkButton4.Text = Convert.ToString(cmd.ExecuteScalar());
@@ -263,7 +263,7 @@ public partial class User_Tree : System.Web.UI.Page
             }
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "select fname from usersnew where sregno=@ID and node='two'";
+                cmd.CommandText = "select fname from usersnew where sregno=@ID and node='two' and active='1'";
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar).Value = Sr;
                 cmd.Connection = con;
                 Label11.Text = Convert.ToString(cmd.ExecuteScalar());

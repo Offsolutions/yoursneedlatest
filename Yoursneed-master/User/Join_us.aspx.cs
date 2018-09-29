@@ -213,7 +213,7 @@ public partial class User_Join_us : System.Web.UI.Page
                         apicall(apival);
                     }
 
-                check();
+                check1();
                 ts.Complete();
                 ts.Dispose();
                 details();
@@ -273,7 +273,7 @@ public partial class User_Join_us : System.Web.UI.Page
        // return total;
     
     }
-    protected void check()
+    protected void check1()
     {
         DataTable dt = new DataTable();
         dt = objsql.GetTable("select * from usersnew");
